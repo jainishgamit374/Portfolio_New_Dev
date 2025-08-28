@@ -1,0 +1,25 @@
+.hr-text {
+  font-weight: 100;
+}
+
+.hoverText {
+  transition:
+    0.35s color;
+}
+
+.hoverText:hover {
+  color: rgb(238, 242, 255);
+}
+
+/* To the right */
+.hoverText:hover+.hoverText {
+  color: rgb(223, 223, 223);
+}
+
+
+
+/* To the left */
+.hoverText:has(+ .hoverText:hover) {
+  color: rgb(223, 223, 223);
+
+}

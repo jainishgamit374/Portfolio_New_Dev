@@ -1,0 +1,373 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Oxta';
+  src: url("./assets/Oxta.woff");
+}
+@font-face {
+  font-family: 'BSV';
+  src: url("./assets/fonnts.com-Bandeins_Strange_Variable.ttf");
+}
+
+:root {
+  --cursor-size: 15px;
+  --background: #f2f2f2;
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margins Bottom ==========*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+.hero-img {
+  background-image: url("./assets/Heroimg/H3.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-blue {
+  background-image: url(./assets/Background/rR6HYXBrMmX4cRpXfXUOvpvpB0.png);
+  width: 100%;
+  height: 100%;
+  background-size: 128px;
+  background-repeat: repeat;
+  opacity: 0.5;
+  border-radius: 0px;
+}
+
+.gradient {
+  background: linear-gradient(161.909deg, rgba(98, 98, 98, 0.296) 0%, rgb(26, 26, 26) 100%);
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  opacity: 1;
+  will-change: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cursor {
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  background: var(--background);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 99;
+}
+
+
+/* Services start */
+
+.service-cont,
+.service-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #8f8f8f;
+  border-bottom: 1px solid #8f8f8f;
+  padding: 5vw 1vw;
+  width: 100%;
+  height: 8vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-cont > :hover {
+  opacity: 0;
+}
+
+.service-cont::before {
+  display: flex;
+  align-items: center;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+  cursor: pointer;
+}
+
+.service-cont:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  top: 100%;
+  mix-blend-mode: difference;
+}
+
+.service-links > i {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #fff;
+  mix-blend-mode: difference;
+  font-family: gilroy;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+  color: #000;
+}
+
+.service-linksbefore {
+  animation: right-to-left 10s linear infinite;
+}
+
+@keyframes right-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translatex(-100vw);
+  }
+}
+
+.service-links > h1,
+.service-links > i,
+.marquee-item > h1,
+.marquee-item > i {
+  font-family: 'gilroy';
+  mix-blend-mode: difference;
+}
+
+.marquee-item > i {
+  font-size: 3vw;
+  font-weight: 100;
+  color: #000;
+}
+
+.service-cont,
+.service-links,
+.service-linksbefore {
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+.service-cont:hover .service-links {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.service-cont:hover .service-linksbefore {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Services End */
+
+/* Faq start */
+.faq-bga {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 100%;
+  will-change: auto;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  opacity: 1;
+}
+
+.faq-bg {
+  background: rgb(13, 13, 13);
+  width: 100%;
+  will-change: auto;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  opacity: 1;
+}
+
+.imafeback-cont {
+  opacity: 0.03;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+}
+
+/* Faq End */
+
+/* Marque */
+
+.marque-items {
+  animation: marqueslid 10s linear infinite;
+}
+
+@keyframes marqueslid {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+/* border */
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.box {
+  position: relative; 
+  z-index: 1; 
+}
+
+.box::after, .box::before {
+  content: '';
+  position: absolute;
+  inset: 0.5rem;
+  border-radius: 1.5rem;
+  z-index: -1;  
+  background: conic-gradient(from var(--angle), #000000, #333333, #666666, #999999, #cccccc, #ffffff);
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.box:hover::after, .box:hover::before {
+  opacity: 0.2;
+  filter: blur(10px);
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.footertext {
+  font-family: 'Oxta';
+}
+
+
+/* Footer Animation start */
+.links{
+  position: relative;
+}
+
+.links::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #202020;
+  transition: all ease-in-out 0.5s;
+}
+
+.links:hover:before {
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  right: 0;
+  background-color: #202020;
+}
+
+.link{
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #dcdcdc;
+  left: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.link:hover:before {
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  right: 0;
+  background-color: #cbcbcb;
+}
+/* Footer Animation End */
+
