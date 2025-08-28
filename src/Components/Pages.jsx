@@ -6,7 +6,7 @@ import Infosection from "./Infosection";
 import About from "./About";
 import Marques from "./Marques";
 import Services from "./Services";
-import Projects from "./Projects";
+// import Projects from "./Projects"; // Commented out temporarily
 import Testiomonials from "./Testiomonials";
 import Frequentlyque from "./Frequentlyque";
 import Footer from "./Footer";
@@ -22,7 +22,7 @@ const Pages = () => {
       <About />
       <Marques />
       <Services />
-      // <Projects />
+      {/* <Projects /> */}
       <Testiomonials />
       <Frequentlyque />
       <Footer />
