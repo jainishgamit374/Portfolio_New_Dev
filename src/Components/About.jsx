@@ -6,24 +6,24 @@ import { useGSAP } from "@gsap/react";
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
-  const codingskills = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "TypeScript",
-    "ReactJs",
-    "ExpressJs",
-    "ThreeJs",
-    "GSAP",
-    "FramerMotion",
+  const aiAutomationSkills = [
+    "Python",
+    "OpenAI API",
+    "Claude API",
+    "LangChain",
+    "Zapier",
+    "Make.com",
+    "n8n",
+    "Bubble",
+    "Airtable",
   ];
-  const designskills = [
-    "Figma",
-    "Framer",
-    "Canvas",
-    "Blender",
-    "Ui/UX",
-    "Wix Studio",
+  const saasWorkflowSkills = [
+    "Workflow Design",
+    "Process Automation",
+    "API Integration",
+    "No-Code Solutions",
+    "Business Logic",
+    "Data Analysis",
   ];
 
   useEffect(() => {
@@ -179,20 +179,28 @@ const About = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <h1 className="text-2xl lg:text-3xl text-white">DEVELOPE</h1>
+                <h1 className="text-2xl lg:text-3xl text-white">AI & AUTOMATION</h1>
                 <h2 className="text-gray-400">Description</h2>
                 <div className="paragraph">
                   <p className="text-base text-start lg:text-md text-gray-300">
-                    I started building websites with JavaScript, and now I craft
-                    them with TypeScript, React, Express, Node, and a little
-                    magic!
+                    I create intelligent automation solutions using AI and modern tools
+                    to streamline business processes and enhance productivity with
+                    cutting-edge GenAI integration!
                   </p>
                   <h2 className="py-4 text-gray-400">Skills & Tools</h2>
                   <div className="Skills flex flex-wrap gap-2">
-                    {codingskills.map((item, i) => (
+                    {aiAutomationSkills.map((item, i) => (
                       <h1
                         key={i}
-                        className="bg-zinc-300 w-fit px-2 py-[.1vw] rounded-xl text-zinc-800 text-sm"
+                        className="ai-skill bg-zinc-300 w-fit px-2 py-[.1vw] rounded-xl text-zinc-800 text-sm cursor-pointer transition-all duration-300 hover:bg-blue-400 hover:text-white hover:scale-105 hover:shadow-lg transform"
+                        onMouseEnter={(e) => {
+                          e.target.style.transform = 'scale(1.1) rotateY(10deg)';
+                          e.target.style.boxShadow = '0 10px 25px rgba(59, 130, 246, 0.5)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.transform = 'scale(1) rotateY(0deg)';
+                          e.target.style.boxShadow = 'none';
+                        }}
                       >
                         {item}
                       </h1>
@@ -224,19 +232,28 @@ const About = () => {
                   </defs>
                 </svg>
 
-                <h1 className="text-2xl lg:text-3xl text-white">DESIGN</h1>
+                <h1 className="text-2xl lg:text-3xl text-white">SAAS WORKFLOWS</h1>
                 <h2 className="text-gray-400">Description</h2>
                 <div className="paragraph">
                   <p className="text-base text-start lg:text-md text-gray-300">
-                    I started designing as my hobby, but like all good hobbies,
-                    it slowly crept into my career—now it won't leave me alone!
+                    I design and build SaaS workflows that help businesses leverage
+                    GenAI and automation to transform their operations and boost
+                    efficiency!
                   </p>
                   <h2 className="py-4 text-gray-400">Skills & Tools</h2>
                   <div className="Skills flex flex-wrap gap-2">
-                    {designskills.map((item, i) => (
+                    {saasWorkflowSkills.map((item, i) => (
                       <h1
                         key={i}
-                        className="bg-zinc-300 w-fit px-2 py-[.1vw] rounded-xl text-zinc-800 text-sm"
+                        className="saas-skill bg-zinc-300 w-fit px-2 py-[.1vw] rounded-xl text-zinc-800 text-sm cursor-pointer transition-all duration-300 hover:bg-purple-400 hover:text-white hover:scale-105 hover:shadow-lg transform"
+                        onMouseEnter={(e) => {
+                          e.target.style.transform = 'scale(1.1) rotateX(10deg)';
+                          e.target.style.boxShadow = '0 10px 25px rgba(147, 51, 234, 0.5)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.transform = 'scale(1) rotateX(0deg)';
+                          e.target.style.boxShadow = 'none';
+                        }}
                       >
                         {item}
                       </h1>
@@ -251,9 +268,9 @@ const About = () => {
               <div className="project-container w-full h-full flex flex-col items-center justify-center">
                 <span className="text-effect">
                   <p className="text-base md:text-lg lg:text-xl text-center text-white leading-relaxed">
-                    A Creative Developer With A passion For Design And
-                    Development. From Concept To Launch, I'm Involved In Every
-                    Step of the Process
+                    An AI & Automation Creator With A Passion For Building
+                    SaaS Workflows That Help Businesses With GenAI And Automation.
+                    From Concept To Launch, I Transform Ideas Into Smart Solutions
                   </p>
                 </span>
               </div>

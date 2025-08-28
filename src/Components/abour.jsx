@@ -100,8 +100,8 @@ const About = () => {
                         <div className="col-span-1 md:col-span-3 lg:col-span-3 rounded-xl md:rounded-2xl lg:rounded-3xl p-6 md:p-10 md:pt-16 lg:p-10 lg:pt-16 flex items-start flex-col gap-4 md:gap-8 lg:gap-8 faq-bga img-cont bg-[#232323]">
                             <h1 className='text-xl md:text-2xl lg:text-2xl'>I am Jainish Gamit.</h1>
                             <div className="paragraph">
-                                <p className='text-start py-2 text-sm md:text-base lg:text-lg'>A creative developer with a passion for design and development. From concept to launch, I am involved in every step of the process. </p>
-                                <p className='text-start py-2 text-sm md:text-base lg:text-lg'>User experience, visually striking design, engaging interactions and impeccable typography are my top priorities. </p>
+                                <p className='text-start py-2 text-sm md:text-base lg:text-lg'>An AI & Automation Creator with a passion for building SaaS workflows. From concept to launch, I am involved in every step of the process. </p>
+                                <p className='text-start py-2 text-sm md:text-base lg:text-lg'>GenAI integration, intelligent automation, seamless workflows and business transformation are my top priorities. </p>
                             </div>
                         </div>
                         <div className="col-span-1 md:col-span-2 lg:col-span-2 bg-[#232323] rounded-xl md:rounded-2xl lg:rounded-3xl p-6 md:p-10 lg:p-10 flex items-center justify-center faq-bga">
@@ -120,13 +120,13 @@ const About = () => {
                         <div className="bg-[#232323] rounded-xl md:rounded-2xl lg:rounded-3xl faq-bga p-10 md:p-10 lg:p-0">
                             <div className="project-container w-full h-full flex flex-row md:flex-col lg:flex-col gap-4 md:gap-0 lg:gap-2 items-center justify-center">
                                 <h1 className='text-5xl md:text-5xl lg:text-6xl'>1.5Year</h1>
-                                <h2 className='text-lg md:text-lg lg:text-xl leading-none text-center'>Development <br /> & Designing</h2>
+                                <h2 className='text-lg md:text-lg lg:text-xl leading-none text-center'>AI & Automation <br /> Solutions</h2>
                             </div>
                         </div>
                         <div className="col-span-1 md:col-span-2 lg:col-span-2 rounded-xl md:rounded-2xl lg:rounded-3xl bg-[#232323] faq-bga p-10 md:p-14 lg:p-10">
                             <div className="project-container w-full h-full flex flex-col items-center justify-center">
                                 <span className="text-effect">
-                                <p className='text-sm md:text-2xl lg:text-lg text-center'>Helping startups, B2B Services, small businesses and Creatives with Customization design solutions that include landing pages & website Creations.</p>
+                                <p className='text-sm md:text-2xl lg:text-lg text-center'>Helping startups, B2B Services, and small businesses with AI & Automation solutions that include workflow optimization and GenAI integrations.</p>
                                 </span>
                             </div>
                         </div>
