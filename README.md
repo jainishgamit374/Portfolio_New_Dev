@@ -62,8 +62,8 @@ A modern, interactive portfolio website built with React, featuring smooth anima
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/jainishgamit374/portfolio.git
-   cd portfolio
+   git clone https://github.com/jainishgamit374/portfolio-new.git
+   cd portfolio-new
    ```
 
 2. **Install dependencies**

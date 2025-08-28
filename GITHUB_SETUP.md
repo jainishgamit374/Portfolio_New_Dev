@@ -15,7 +15,7 @@ Your portfolio project is ready to be pushed to GitHub! Here's how to complete t
 2. Click the "+" icon in the top right corner
 3. Select "New repository"
 4. Fill in the details:
-   - **Repository name**: `portfolio`
+   - **Repository name**: `portfolio-new`
    - **Description**: `Modern, interactive portfolio website built with React, featuring smooth animations and responsive design`
    - **Visibility**: Public (recommended for portfolio)
    - **⚠️ Important**: Do NOT initialize with README, .gitignore, or license (we already have these)
@@ -23,7 +23,7 @@ Your portfolio project is ready to be pushed to GitHub! Here's how to complete t
 
 ### Method 2: Using GitHub CLI (if you have it installed)
 ```bash
-gh repo create portfolio --public --description "Modern, interactive portfolio website built with React"
+gh repo create portfolio-new --public --description "Modern, interactive portfolio website built with React"
 ```
 
 ## 🚀 Push Your Code
@@ -45,7 +45,7 @@ If you get an authentication error, you may need to set up GitHub authentication
 1. Generate SSH key: `ssh-keygen -t ed25519 -C "your-email@example.com"`
 2. Add to SSH agent: `ssh-add ~/.ssh/id_ed25519`
 3. Add public key to GitHub: Settings → SSH and GPG keys → New SSH key
-4. Update remote to use SSH: `git remote set-url origin git@github.com:jainishgamit374/portfolio.git`
+4. Update remote to use SSH: `git remote set-url origin git@github.com:jainishgamit374/portfolio-new.git`
 
 ## 🎯 Repository Features to Enable
 
@@ -55,7 +55,7 @@ After pushing, consider enabling these GitHub features:
 1. Go to repository Settings → Pages
 2. Source: Deploy from a branch
 3. Branch: `main` / `(root)` or create a `gh-pages` branch
-4. Your site will be available at: `https://jainishgamit374.github.io/portfolio/`
+4. Your site will be available at: `https://jainishgamit374.github.io/portfolio-new/`
 
 ### 2. Issues & Discussions
 - Enable Issues for bug tracking and feature requests
