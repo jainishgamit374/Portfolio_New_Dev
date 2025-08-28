@@ -5,9 +5,9 @@ import gsap from "gsap";
 const Footer = () => {
     const footerLinkes = [
         { link: "Github", url: "https://github.com/jainishgamit374" },
-        { link: "LinkedIn", url: "https://linkedin.com/in/jainish-gamit" },
-        { link: "Twitter", url: "https://twitter.com/jainishgamit374" },
-        { link: "Instagram", url: "https://instagram.com/jainish_gamit" },
+        { link: "LinkedIn", url: "https://www.linkedin.com/in/jainish-gamit-2b024b296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { link: "Twitter", url: "https://x.com/gamit_jain43598?t=PRBYtYqmVbK7mLeWu_Gp7A&s=09" },
+        { link: "Instagram", url: "https://www.instagram.com/flowgenix_.ai?igsh=MXZzNmxtdWdubGh5dg==" },
     ];
     useEffect(() => {
         // Create wave overlay element
