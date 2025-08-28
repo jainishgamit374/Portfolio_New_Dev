@@ -22,7 +22,7 @@ const Pages = () => {
       <About />
       <Marques />
       <Services />
-      <Projects />
+      // <Projects />
       <Testiomonials />
       <Frequentlyque />
       <Footer />
