@@ -1,12 +1,13 @@
 import { easeInOut, motion, MotionConfig } from 'framer-motion'
-import { useState, useRef, useEffect } from 'react'
-import gsap, { Power2 } from "gsap";
+import { useState, useRef, useEffect, useCallback } from 'react'
+import PropTypes from 'prop-types'
+import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const Loader = (props) => {
     const [isHovered, setIsHovered] = useState(false);
     const [btnClick, setBtnClick] = useState(false)
-    const [isLoading, setIsLoading] = useState(true);
+    
     const [scrollEnabled, setScrollEnabled] = useState(false);
     const loaderRef = useRef(null);
     const originalScrollY = useRef(0);
@@ -14,7 +15,7 @@ const Loader = (props) => {
 
     const btnClicked = () => {
         setBtnClick(true);
-        setIsLoading(false);
+        
         setScrollEnabled(true);
         
         // Remove all scroll prevention
@@ -26,7 +27,7 @@ const Loader = (props) => {
         }
     }
     
-    const enableScrolling = () => {
+    const enableScrolling = useCallback(() => {
         // Re-enable CSS scrolling
         document.body.style.overflow = '';
         document.body.style.position = '';
@@ -42,9 +43,9 @@ const Loader = (props) => {
         
         // Restore scroll position if needed
         window.scrollTo(0, originalScrollY.current);
-    }
+    }, []);
     
-    const disableScrolling = () => {
+    const disableScrolling = useCallback(() => {
         // Store current scroll position
         originalScrollY.current = window.pageYOffset || document.documentElement.scrollTop;
         
@@ -57,12 +58,14 @@ const Loader = (props) => {
         
         // Method 2: Event prevention - backup method
         const preventScroll = (e) => {
-            if (!scrollEnabled) {
-                e.preventDefault();
-                e.stopPropagation();
-                e.stopImmediatePropagation();
-                return false;
-            }
+            if (scrollEnabled) return;
+            const target = e.target;
+            const isInteractive = target && target.closest && target.closest('button, a, input, textarea, [role="button"], .primary-btn');
+            if (isInteractive) return; // allow interactions on button and interactive elements
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            return false;
         };
         
         const preventKeyScroll = (e) => {
@@ -103,7 +106,7 @@ const Loader = (props) => {
         
         // Force scroll to top immediately
         window.scrollTo(0, 0);
-    }
+    }, [scrollEnabled]);
 
     const t1 = gsap.timeline();
     useGSAP(() => {
@@ -136,7 +139,6 @@ const Loader = (props) => {
                         }
                         if (percent === 100) {
                             clearInterval(interval);
-                            setIsLoading(false);
                             // DON'T enable scrolling here - wait for button click
                         }
                     }, 100);
@@ -174,7 +176,7 @@ const Loader = (props) => {
         return () => {
             enableScrolling();
         };
-    }, [scrollEnabled]);
+    }, [scrollEnabled, disableScrolling, enableScrolling]);
     
     // Ensure scrolling stays disabled even during state changes
     useEffect(() => {
@@ -223,6 +225,7 @@ const Loader = (props) => {
                                     </div>
                                     <motion.button
                                         onClick={btnClicked}
+                                        onTouchStart={btnClicked}
                                         whileHover={{ scale: 1.1 }}
                                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                                         onMouseEnter={() => setIsHovered(true)}
@@ -252,3 +255,7 @@ const Loader = (props) => {
 }
 
 export default Loader
+
+Loader.propTypes = {
+    onStartClick: PropTypes.func,
+}
