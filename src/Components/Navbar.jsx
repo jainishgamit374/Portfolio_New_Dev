@@ -107,7 +107,7 @@ const Navbar = () => {
         <div className="w-[10vw] hidden md:block">
           <a
             className="Resume btn"
-            href={Resume}
+            
             download="JainishGamit_Resume.pdf"
           >
             <Button text="Resume" />
