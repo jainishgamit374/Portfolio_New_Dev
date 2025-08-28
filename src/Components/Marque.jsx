@@ -11,27 +11,27 @@ const Marque = () => {
               <div className="flex items-center justify-center  gap-20 ">
 
                 <div className="marque-items-cont marque-items flex items-center gap-20">
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase"> Development</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">AI Solutions</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Designing</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Automation</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Seo</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Machine Learning</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Ui/Ux</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Chatbots</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Branding</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Data Analytics</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
                 </div>
                 <div className="marque-items-cont marque-items flex items-center gap-20">
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Development</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">AI Solutions</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Designing</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Automation</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Seo</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Machine Learning</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Ui/Ux</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Chatbots</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
-                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Branding</h1>
+                  <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">Data Analytics</h1>
                   <div className="circle size-6 md:size-10 bg-black rounded-full"></div>
                 </div>
               </div>

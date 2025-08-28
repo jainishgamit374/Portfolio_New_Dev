@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="w-full h-full flex items-center justify-center">
           
           {/* Hero text animation */}
-          <div className="hero-text flex flex-col  gap-2 absolute w-full top-1/4 left-1/2 md:top-1/4 md:left-1/2 -translate-x-1/2 -translate-y-1/2 z-[7] text-center">
+          <div className="hero-text flex flex-col  gap-2 absolute w-full top-1/3 left-1/2 md:top-1/3 md:left-1/2 -translate-x-1/2 -translate-y-1/2 z-[7] text-center">
             <h1 className="text-[16vw] md:text-[12vw] lg:text-[13vw] hr-text uppercase tracking-tight leading-none md:leading-[10vw] lg:leading-[10vw] font-semibold text-zinc-300">
               {"AI & Automation".split("").map((child, idx) => (
                 <span className={styles.hoverText} key={idx}>

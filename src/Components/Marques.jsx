@@ -10,31 +10,31 @@ const Marques = () => {
                             <div className="flex items-center justify-center  gap-20 ">
                                 <div className="marque-items-cont marque-items flex items-center gap-20">
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Development
+                                        Python
                                     </h1>
                                     <div className="circle size-8  rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Designing
+                                        TensorFlow
                                     </h1>
                                     <div className="circle size-8  rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Seo
+                                        OpenAI
                                     </h1>
                                     <div className="circle size-8  rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Ui/Ux
+                                        React
                                     </h1>
                                     <div className="circle size-8  rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Branding
+                                        Node.js
                                     </h1>
                                     <div className="circle size-8  rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
@@ -42,35 +42,35 @@ const Marques = () => {
                                 </div>
                                 <div className="marque-items-cont marque-items flex items-center gap-20">
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Development
+                                        Python
                                     </h1>
                                     <div className="circle size-8 rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
 
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Designing
+                                        TensorFlow
                                     </h1>
                                     <div className="circle size-8 rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
 
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Seo
+                                        OpenAI
                                     </h1>
                                     <div className="circle size-8 rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
 
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Ui/Ux
+                                        React
                                     </h1>
                                     <div className="circle size-8 rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>
 
                                     </div>
                                     <h1 className="text-4xl md:text-7xl lg:text-7xl font-semibold uppercase">
-                                        Branding
+                                        Node.js
                                     </h1>
                                     <div className="circle size-8 rounded-full">
                                         <i className="ri-arrow-right-line text-xl font-semibold border-2 p-5  border-black rounded-full"></i>

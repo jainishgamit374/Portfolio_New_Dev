@@ -1,11 +1,11 @@
 import React from "react";
 
 const Services = () => {
-  const wd = Array(10).fill("Web Development");
-  const ud = Array(10).fill("Ui/Ux Design");
-  const ct = Array(10).fill("Consulting & Training");
-  const pd = Array(10).fill("Product Designing");
-  const so = Array(10).fill("Seo");
+  const ai = Array(10).fill("AI Solutions");
+  const automation = Array(10).fill("Process Automation");
+  const ml = Array(10).fill("Machine Learning");
+  const chatbots = Array(10).fill("AI Chatbots");
+  const analytics = Array(10).fill("Data Analytics");
 
   return (
     <>
@@ -19,11 +19,11 @@ const Services = () => {
         <div className="service-wrapper max-w-screen-xl mx-auto  py-9 px-4 flex items-center flex-col justify-center ">
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">web development</h1>
+              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">AI Solutions</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
-              {wd.map((item, index) => (
+              {ai.map((item, index) => (
                 <div key={index} className="marquee-item">
                   <h1 className="text-[4vw] md:text-[4vw] lg:text-[3vw] capitilize w-[35vw] md:w-[40vw] lg:w-[30vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
@@ -34,11 +34,11 @@ const Services = () => {
 
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">ui/ux Designe</h1>
+              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Process Automation</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
-              {ud.map((item, index) => (
+              {automation.map((item, index) => (
                 <div key={index} className="marquee-item">
                   <h1 className="text-[4vw] md:text-[4vw] lg:text-[3vw] capitilize w-[35vw] md:w-[30vw] lg:w-[25vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
@@ -49,11 +49,11 @@ const Services = () => {
 
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">consulting & Tranning</h1>
+              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Machine Learning</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
-              {ct.map((item, index) => (
+              {ml.map((item, index) => (
                 <div key={index} className="marquee-item">
                   <h1 className="text-[4vw] md:text-[4vw] lg:text-[3vw] capitilize w-[38vw] md:w-[40vw] lg:w-[30vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
@@ -64,11 +64,11 @@ const Services = () => {
   
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Product Designer</h1>
+              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">AI Chatbots</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
-              {pd.map((item, index) => (
+              {chatbots.map((item, index) => (
                 <div key={index} className="marquee-item">
                   <h1 className="text-[4vw] md:text-[4vw] lg:text-[3vw] capitilize w-[35vw] md:w-[40vw] lg:w-[30vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
@@ -79,18 +79,18 @@ const Services = () => {
 
           <div className="service-cont">
             <div className="service-links">
-              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Seo</h1>
+              <h1 className="text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-white uppercase font-semibold mix-blend-difference">Data Analytics</h1>
               <i className="ri-arrow-right-up-line"></i>
             </div>
             <div className="service-linksbefore flex items-center gap-[2vw] absolute h-full w-full opacity-0 -ml-[10px]">
-              {so.map((item, index) => (
+              {analytics.map((item, index) => (
                 <div key={index} className="marquee-item">
                   <h1 className="text-[4vw] md:text-[4vw] lg:text-[3vw] uppercase w-[35vw] md:w-[20vw] lg:w-[10vw]">{item}</h1>
                   <i className="ri-arrow-right-up-line"></i>
                 </div>
               ))}
             </div>
-          </div>    
+          </div>
 
         </div>
       </div>
